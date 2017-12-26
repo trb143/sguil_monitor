@@ -1,0 +1,151 @@
+timestamp	,	src_ip	,	dst_ip	,	class	,	signature
+2017-12-20 13:59:33	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 13:59:44	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:00:11	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:00:37	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:01:01	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:01:08	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-20 14:01:22	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-20 14:01:55	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-20 14:02:00	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:02:47	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:02:55	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:05:15	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-20 14:05:38	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:07:35	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:11:33	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:14:25	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:34:36	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-20 14:39:48	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:40:40	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:42:33	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:43:23	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:52:56	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:53:38	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:53:51	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:54:08	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 14:54:13	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-20 14:59:10	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 21:52:38	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 21:56:39	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 22:01:46	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-20 22:02:18	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-21 07:53:40	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-21 09:21:13	,	3232236827	,	3232236823	,	attempted-recon	,	GPL SNMP public access udp
+2017-12-21 09:44:09	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-21 09:49:25	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-21 15:23:31	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-21 17:35:42	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-21 17:42:18	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-21 18:00:37	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-21 21:43:54	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-21 21:56:57	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-22 06:19:07	,	1296585361	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-22 18:03:30	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-22 20:00:00	,	1296585361	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-23 10:47:06	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-23 12:12:10	,	3232236802	,	3232236811	,	suspicious-login	,	DNS SSH
+2017-12-23 12:20:32	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:20:32	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:20:32	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential VNC Scan 5900-5920
+2017-12-23 12:20:33	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential VNC Scan 5800-5820
+2017-12-23 12:20:33	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:20:33	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:20:35	,	3232236802	,	3232237052	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:20:35	,	3232236802	,	3232237052	,	attempted-recon	,	ET SCAN Potential SSH Scan
+2017-12-23 12:20:35	,	3232236802	,	3232236825	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:20:36	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:20:36	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:20:36	,	3232236802	,	3232236852	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:20:36	,	3232236802	,	3232236851	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:20:36	,	3232236802	,	3232237052	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:20:36	,	3232236802	,	3232236852	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:20:36	,	3232236802	,	3232236851	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:20:36	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:20:39	,	3232236802	,	3232237054	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:20:39	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:20:39	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:20:39	,	3232236802	,	3232237053	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:20:39	,	3232236802	,	3232237054	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:20:39	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:20:39	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:20:39	,	3232236802	,	3232237053	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:20:40	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:20:46	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:20:53	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:21:53	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:21:53	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential VNC Scan 5800-5820
+2017-12-23 12:21:53	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential VNC Scan 5900-5920
+2017-12-23 12:21:53	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:21:53	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:21:53	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:21:57	,	3232236802	,	3232236811	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:21:57	,	3232236802	,	3232237054	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:21:57	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:21:57	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:21:57	,	3232236802	,	3232237054	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:21:57	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:21:57	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:21:57	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:21:57	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:21:57	,	3232236802	,	3232236822	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:21:57	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:21:57	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:21:57	,	3232236802	,	3232236826	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:21:57	,	3232236802	,	3232237052	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:21:59	,	3232236802	,	3232237053	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:21:59	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:21:59	,	3232236802	,	3232237054	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:21:59	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:22:01	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:22:07	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:22:14	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:22:20	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential VNC Scan 5800-5820
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential VNC Scan 5900-5920
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:17	,	3232236802	,	3232236803	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:23:19	,	3232236802	,	3232236826	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:19	,	3232236802	,	3232237042	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:19	,	3232236802	,	3232236825	,	attempted-recon	,	ET SCAN Potential SSH Scan
+2017-12-23 12:23:19	,	3232236802	,	3232237042	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:23:19	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:23:19	,	3232236802	,	3232236822	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:23:19	,	3232236802	,	3232236811	,	bad-unknown	,	ET POLICY Suspicious inbound to mySQL port 3306
+2017-12-23 12:23:20	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:23:20	,	3232236802	,	3232237053	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:23:20	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:23:20	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to MSSQL port 1433
+2017-12-23 12:23:20	,	3232236802	,	3232237053	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:23:20	,	3232236802	,	3232236826	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:23:20	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:23:20	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to Oracle SQL port 1521
+2017-12-23 12:23:22	,	3232236802	,	3232236825	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:23:22	,	3232236802	,	3232237053	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:23:22	,	3232236802	,	3232236853	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:23:22	,	3232236802	,	3232237054	,	bad-unknown	,	ET POLICY Suspicious inbound to PostgreSQL port 5432
+2017-12-23 12:23:26	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:32	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:39	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:45	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:52	,	3232236802	,	3232236811	,	attempted-recon	,	ET SCAN Potential SSH Scan OUTBOUND
+2017-12-23 12:23:57	,	3232236802	,	3232236822	,	attempted-recon	,	ET SCAN Potential VNC Scan 5900-5920
+2017-12-25 00:42:56	,	84415046	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-25 02:19:14	,	84415046	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-25 21:03:35	,	3232236802	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 07:55:03	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 07:55:49	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-26 08:33:40	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 08:38:40	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 08:38:47	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-26 08:54:54	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-26 08:54:59	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 09:38:27	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 09:38:33	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-26 10:00:19	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-26 10:00:23	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
+2017-12-26 10:59:37	,	1543687603	,	3232236811	,	suspicious-login	,	IDS SSH
+2017-12-26 11:08:13	,	1543687603	,	3232236822	,	suspicious-login	,	Cliff SSH
