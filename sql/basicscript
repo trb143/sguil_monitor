@@ -1,0 +1,2 @@
+sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "select timestamp,src_ip,dst_ip,class, signature from event where DATE_SUB(NOW(), INTERVAL 5 HOUR) < timestamp  order by timestamp;"
+
