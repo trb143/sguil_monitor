@@ -42,29 +42,30 @@ print('Config loaded')
 with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
     content = csv_file.readlines()
     print('Processing report data')
+    report_line = ""
     for row in content:
         row = row.replace('\n', '')
         row = row.replace('\t', '')
         fields = row.split(',')
-        report_line = ""
         if fields[0] != 'timestamp':
             source = str(ipaddress.ip_address(int(fields[1])))
             target = str(ipaddress.ip_address(int(fields[2])))
             report_line += 'Event {clas} - {evnt}\nOccurred at {tme} between machines {srce} - {trget}\n'.\
                 format(clas=fields[3], evnt=fields[4], tme=fields[0], srce=source, trget=target)
 
-            # Create the container (outer) email message.
-            print('Sending email')
-            msg = MIMEText(report_line)
-            msg['Subject'] = 'Activity Detected'
-            to = doc['email-to']
-            frm = doc['email-from']
-            msg['From'] = frm
-            msg['To'] = to
-            msg.subject = 'Activity Detected'
+    if report_line:
+        # Create the container (outer) email message.
+        print('Sending email')
+        msg = MIMEText(report_line)
+        msg['Subject'] = 'Activity Detected'
+        to = doc['email-to']
+        frm = doc['email-from']
+        msg['From'] = frm
+        msg['To'] = to
+        msg.subject = 'Activity Detected'
 
-            # Send the email via our own SMTP server.
-            s = smtplib.SMTP('localhost')
-            s.sendmail(to, frm, msg.as_string())
-            s.quit()
-            print('Email sent to ' + to)
+        # Send the email via our own SMTP server.
+        s = smtplib.SMTP('localhost')
+        s.sendmail(frm, to, msg.as_string())
+        s.quit()
+        print('Email sent to ' + to)
