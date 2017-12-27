@@ -1,2 +1,9 @@
-sql/allevents > reports/report
-src/parse
+
+cd /home/merlin/monitor
+
+export site=$(pwd)
+export reports=$site/reports
+export code=$site/src
+
+sql/allevents > $reports/report
+$code/parse
