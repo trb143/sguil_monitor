@@ -34,12 +34,12 @@ print('SGUIL_Monitor V 0.1')
 print('Path is: ' + str(RUN_PATH))
 
 path = os.getcwd()
-with open(RUN_PATH / 'config.yaml', 'r') as f:
+with open(str(RUN_PATH / 'config.yaml'), 'r') as f:
     doc = yaml.load(f)
 
 print('Config loaded')
 
-with open(RUN_PATH / 'reports' / doc['report'], 'r') as csv_file:
+with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
     content = csv_file.readlines()
     print('Processing report data')
     for row in content:
@@ -56,7 +56,7 @@ with open(RUN_PATH / 'reports' / doc['report'], 'r') as csv_file:
             # Create the container (outer) email message.
             print('Sending email')
             msg = MIMEText(report_line)
-            msg['Subject'] = 'Our family reunion'
+            msg['Subject'] = 'Activity Detected'
             to = doc['email-to']
             frm = doc['email-from']
             msg['From'] = frm
@@ -67,3 +67,4 @@ with open(RUN_PATH / 'reports' / doc['report'], 'r') as csv_file:
             s = smtplib.SMTP('localhost')
             s.sendmail(to, frm, msg.as_string())
             s.quit()
+            print('Email sent to ' + to)
