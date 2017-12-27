@@ -1,2 +1,2 @@
-sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "select timestamp,',',src_ip,',',dst_ip,',',class,',', signature from event where class in ('suspicious-login', 'bad-unknown', 'attempted-recon')order by timestamp;"
+sudo mysql --defaults-file=/etc/mysql/debian.cnf -Dsecurityonion_db -e "select timestamp,',',src_ip,',',dst_ip,',',class,',', signature from event where class in ('suspicious-login', 'bad-unknown', 'attempted-recon') DATE_SUB(NOW(), INTERVAL 5 MINUETS) < timestamp order by timestamp;"
 

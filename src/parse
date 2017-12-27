@@ -30,12 +30,18 @@ import os
 TEMP_RUN_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 RUN_PATH = Path(TEMP_RUN_PATH)
 
+print('SGUIL_Monitor V 0.1')
+print('Path is: ' + str(RUN_PATH))
+
 path = os.getcwd()
 with open(RUN_PATH / 'config.yaml', 'r') as f:
     doc = yaml.load(f)
 
+print('Config loaded')
+
 with open(RUN_PATH / 'reports' / doc['report'], 'r') as csv_file:
     content = csv_file.readlines()
+    print('Processing report data')
     for row in content:
         row = row.replace('\n', '')
         row = row.replace('\t', '')
@@ -48,6 +54,7 @@ with open(RUN_PATH / 'reports' / doc['report'], 'r') as csv_file:
                 format(clas=fields[3], evnt=fields[4], tme=fields[0], srce=source, trget=target)
 
             # Create the container (outer) email message.
+            print('Sending email')
             msg = MIMEText(report_line)
             msg['Subject'] = 'Our family reunion'
             to = doc['email-to']
