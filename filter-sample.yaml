@@ -1,0 +1,3 @@
+#Filter out any messages which are false positive.
+#source#target#message#
+#192.168.0.1#192.168.0.42#GPL SNMP public access udp#
