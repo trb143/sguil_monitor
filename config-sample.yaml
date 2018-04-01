@@ -1,3 +1,4 @@
 report: report
 email-to: <my email address>
 email-from: <servers email address>
+send-mail: true
