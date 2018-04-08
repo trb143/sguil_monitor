@@ -30,8 +30,10 @@ import os
 TEMP_RUN_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 RUN_PATH = Path(TEMP_RUN_PATH)
 
-print('SGUIL_Monitor V 0.2')
-print('[*] Path is: ' + str(RUN_PATH))
+report_line = ''
+
+report_line += 'SGUIL_Monitor V 0.2\n'
+report_line += '[*] Path is: ' + str(RUN_PATH) + '\n'
 
 path = os.getcwd()
 with open(str(RUN_PATH / 'config.yaml'), 'r') as f:
@@ -44,12 +46,12 @@ with open(str(RUN_PATH / 'filter'), 'r') as f:
             ip = line.split('#')
             filter_recs.append({'src': ip[0], 'dst': ip[1], 'msg': ip[2]})
 
-print('[*] Config loaded')
+report_line += '[*] Config loaded\n'
 
 with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
     content = csv_file.readlines()
-    print('[*] Processing report data')
-    report_line = ""
+    report_line += '[*] Processing report data \n\n'
+    report = False
     for row in content:
         row = row.replace('\n', '')
         row = row.replace('\t', '')
@@ -61,12 +63,13 @@ with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
                 if item['src'] == source and item['dst'] == target and item['msg'] == fields[4]:
                     pass
                 else:
+                    report = True
                     report_line += 'Event {clas} - {evnt}\nOccurred at {tme} between machines {srce} - {trget}\n'.\
                         format(clas=fields[3], evnt=fields[4], tme=fields[0], srce=source, trget=target)
 
-    if report_line and doc['send-mail'] is True:
+    if report and doc['send-mail'] is True:
         # Create the container (outer) email message.
-        print('[*] Sending email')
+        report_line += '\n[*] Sending email\n' 
         msg = MIMEText(report_line)
         msg['Subject'] = 'Activity Detected'
         to = doc['email-to']
@@ -79,7 +82,3 @@ with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
         s = smtplib.SMTP('localhost')
         s.sendmail(frm, to, msg.as_string())
         s.quit()
-        print('Email sent to ' + to)
-    else:
-        print('[-] ' + report_line)
-    print('[*] Completed')
