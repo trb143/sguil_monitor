@@ -49,7 +49,7 @@ with open(str(RUN_PATH / 'filter'), 'r') as f:
 
 report_line += '[*] Config loaded\n'
 
-interface = 'eth0'
+interface = doc['interface']
 with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
     content = csv_file.readlines()
     report_line += '[*] Processing report data \n\n'
