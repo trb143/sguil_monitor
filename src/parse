@@ -68,10 +68,10 @@ with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
                     report_line += 'Event {clas} - {evnt}\nOccurred at {tme} between machines {srce} - {trget}\n'.\
                         format(clas=fields[3], evnt=fields[4], tme=fields[0], srce=source, trget=target)
                     if 'SNMP' in evnt:
-						ans, uans = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=source, timeout=2, iface=interface, inter=0.1)
+                        ans, uans = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=source, timeout=2, iface=interface, inter=0.1)
 					    for snd, rcv in ans:
-					        if ip[1][:-1] != rcv.fields['src']:
-					            report_line += rcv.sprintf(r"MAC address for ip:%ARP.psrc% - %Ether.src% expected " + source)
+					       if ip[1][:-1] != rcv.fields['src']:
+					          report_line += rcv.sprintf(r"MAC address for ip:%ARP.psrc% - %Ether.src% expected " + source)
 
     if report and doc['send-mail'] is True:
         # Create the container (outer) email message.
