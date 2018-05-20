@@ -24,7 +24,7 @@ import yaml
 
 from pathlib import Path
 from email.mime.text import MIMEText
-#from scapy.all import srp, Ether, ARP, conf
+from scapy.all import srp, Ether, ARP, conf
 
 import os
 
@@ -73,7 +73,7 @@ with open(str(RUN_PATH / 'reports' / doc['report']), 'r') as csv_file:
                                                                            inter=0.1))
                         for snd, rcv in ans:
                             if ip[1][:-1] != rcv.fields['src']:
-                               report_line += rcv.sprintf(r"MAC address for ip:%ARP.psrc% - %Ether.src% expected "
+                                report_line += rcv.sprintf(r"MAC address for ip:%ARP.psrc% - %Ether.src% expected "
                                                            + source)
     if report and doc['send-mail'] is True:
         # Create the container (outer) email message.
