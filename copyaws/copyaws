@@ -1,1 +1,2 @@
+aws s3 mb s3://trinityids
 aws s3 sync /nsm/sensor_data/trinity-ids-eth1/dailylogs/$1 s3://trinityids/$1 --storage-class REDUCED_REDUNDANCY
